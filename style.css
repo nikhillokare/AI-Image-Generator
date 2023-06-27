@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(39, 12, 43);
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh; /* Changed vw to vh for height */
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow: hidden; /* Prevent scroll bars */
+}
+
+header {
+    color: rgb(255, 255, 255);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.bottom-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+}
+
+.input-container {
+    width: 100%;
+    max-width: 600px;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+input {
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgb(38, 57, 77) 0 20px 30px -10px;
+    box-sizing: border-box;
+}
+
+#submit-icon {
+    position: absolute;
+    top: 7px;
+    right: 1px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.image-section {
+    width: 100%;
+    max-width: 500px; /* Adjust the width as needed */
+    max-height: 500px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    flex-wrap: wrap; /* Added to wrap the images */
+}
+
+.image-container {
+    width: 48%; /* Adjust the width as needed */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: rgb(38, 57, 77) 0 20px 30px -10px;
+    margin-bottom: 10px; /* Added for spacing between rows */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
